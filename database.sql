@@ -1,0 +1,9 @@
+CREATE DATABASE myappdev DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE myappdev;
+
+CREATE TABLE IF NOT EXISTS contatos (
+ID int(10) unsigned NOT NULL AUTO_INCREMENT,
+NOME varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+EMAIL varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+PRIMARY KEY (ID)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
